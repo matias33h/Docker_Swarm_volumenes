@@ -1,0 +1,25 @@
+#inciar docker swarm
+docker swarm init
+
+#listar nodes del cluste
+docker node ls
+
+
+#crear un servicio y hacer deploy con un yml
+docker stack deploy -c docker-compose.yml servicio-web
+
+
+
+#Para verificar el estado del servicio y asegurarte de que está funcionando
+docker service ls
+
+ crear imagen 
+docker build -t web1 .
+
+
+docker stack deploy -c swarm.yml mi_stack
+
+
+docker stack services mi_stack
+
+
